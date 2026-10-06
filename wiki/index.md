@@ -28,7 +28,7 @@ Open singing synthesis platform / Open source UTAU successor
 
 [Download Now](#download){: .md-button .md-button--primary }
 [View it on GitHub](https://github.com/openutau/OpenUtau){: .md-button }
-[Documentation](userguide/index.md){: .md-button }
+[Documentation](wiki/index.md){: .md-button }
 
 ---
 

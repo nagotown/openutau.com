@@ -7,7 +7,7 @@ nav_order: 2
 ---
 - G2p Resources: [OpenUtau/py](https://github.com/openutau/OpenUtau/tree/master/py)
 - Set up IDE (Recommended: [Visual Studio](https://visualstudio.microsoft.com/))
-- [Compile OpenUtau from source](/Compiling-from-source/)
+- [Compile OpenUtau from source](/Compiling-from-source)
 - Begin learning C# from [official Microsoft tutorials](https://dotnet.microsoft.com/en-us/learn/csharp)
 
 **Examples of G2p Models that are included in OpenUTAU:**

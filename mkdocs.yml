@@ -1,48 +1,48 @@
 site_name: OpenUtau Wiki
-site_url: https://nagotown.github.io/ou_wiki/
-repo_url: https://github.com/nagotown/ou_wiki/
+site_url: https://nagotown.github.io/
+repo_url: https://github.com/nagotown/openutau.com/
 
 docs_dir: wiki
 
 # edit_uri: https://github.com/nagotown/ou_wiki/tree/main/docs/OpenUtau.wiki
 
-repo_name: openutau/openutau
+# repo_name: openutau/openutau
 
 nav:
   - index.md
   - User Guide:
-    - Home.md
+    - wiki/index.md
     - For beginners:
-      - userguide/Tutorials.md
-      - userguide/Install.md
-      - userguide/Getting-Started.md
-      - userguide/FAQ.md
-      - userguide/Keyboard-Shortcuts.md
+      - wiki/Tutorials.md
+      - wiki/Install.md
+      - wiki/Getting-Started.md
+      - wiki/FAQ.md
+      - wiki/Keyboard-Shortcuts.md
     - Basics:
-      - userguide/Phonemizers.md
-      - userguide/Resamplers-and-Wavtools.md
-      - userguide/Expressions-(Flags).md
-      - userguide/Legacy-Plugins.md
+      - wiki/Phonemizers.md
+      - wiki/Resamplers-and-Wavtools.md
+      - wiki/Expressions-(Flags).md
+      - wiki/Legacy-Plugins.md
     - Advanced:
-      - userguide/Voicebank-development.md
-      - userguide/ENUNU-NNSVS-Support.md
-      - userguide/DiffSinger-support.md
-      - userguide/VOICEVOX-support.md
-      - userguide/Singer-Settings-and-Requirements.md
+      - wiki/Voicebank-development.md
+      - wiki/ENUNU-NNSVS-Support.md
+      - wiki/DiffSinger-support.md
+      - wiki/VOICEVOX-support.md
+      - wiki/Singer-Settings-and-Requirements.md
   - Developer Guide:
     - Compilation:
-      - developerguide/Compiling-from-source.md
-      - developerguide/Compiling-G2p-Models.md
+      - dev/Compiling-from-source.md
+      - dev/Compiling-G2p-Models.md
     - Development:
-      - developerguide/Developing-new-phonemizers.md
-      - developerguide/Adding-support-for-a-new-synthesis-engine.md
-      - developerguide/Fork-OpenUtau-and-develop-a-new-editor.md
+      - dev/Developing-new-phonemizers.md
+      - dev/Adding-support-for-a-new-synthesis-engine.md
+      - dev/Fork-OpenUtau-and-develop-a-new-editor.md
     - Other:
-      - developerguide/USTX-file-format.md
-      - developerguide/Contributing-to-OpenUtau's-localization.md
-      - developerguide/tech-note-‐-music-is-music,-phonetics-is-phonetics-(also-why-you-don't-need-legacy-plugins).md
+      - dev/USTX-file-format.md
+      - dev/Contributing-to-OpenUtau's-localization.md
+      - dev/tech-note-‐-music-is-music,-phonetics-is-phonetics-(also-why-you-don't-need-legacy-plugins).md
   - Reference:
-    - reference/Reference.md
+    - reference/index.md
     - reference/Release-Notes.md
     - reference/Known-Bugs.md
 

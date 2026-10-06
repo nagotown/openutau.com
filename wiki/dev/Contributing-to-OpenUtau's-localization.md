@@ -40,4 +40,4 @@ If you want to add this string to another language that you speak, after your pu
 Note: Never use machine translation to localize strings. For languages you don't understand, leave it blank and wait until a native contributor picks it up. Falling back to English string is still better than a confusing localized string.
 
 ### I've posted my contributions to Crowdin. When will it be applied to OpenUtau?
-Crowdin updates won't be applied to your OpenUtau installation immediately. It will be applied on each OpenUtau release. You can [switch to beta version](/Getting-Started/#beta-version) which is more updated, but you still need to wait until next beta release (Usually once a month) to see latest string updates.
+Crowdin updates won't be applied to your OpenUtau installation immediately. It will be applied on each OpenUtau release. You can [switch to beta version](/Getting-Started#beta-version) which is more updated, but you still need to wait until next beta release (Usually once a month) to see latest string updates.
