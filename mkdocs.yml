@@ -13,21 +13,22 @@ nav:
   - User Guide:
     - Home.md
     - For beginners:
-      - userguide/beginners/Tutorials.md
-      - userguide/beginners/Install.md
-      - userguide/beginners/Getting-Started.md
-      - userguide/beginners/FAQ.md
-      - userguide/beginners/Keyboard-Shortcuts.md
+      - userguide/Tutorials.md
+      - userguide/Install.md
+      - userguide/Getting-Started.md
+      - userguide/FAQ.md
+      - userguide/Keyboard-Shortcuts.md
     - Basics:
-      - userguide/basics/Phonemizers.md
-      - userguide/basics/Resamplers-and-Wavtools.md
-      - userguide/basics/Expressions-(Flags).md
-      - userguide/basics/Legacy-Plugins.md
+      - userguide/Phonemizers.md
+      - userguide/Resamplers-and-Wavtools.md
+      - userguide/Expressions-(Flags).md
+      - userguide/Legacy-Plugins.md
     - Advanced:
-      - userguide/advanced/Voicebank-development.md
-      - userguide/advanced/ENUNU-NNSVS-Support.md
-      - userguide/advanced/DiffSinger-support.md
-      - userguide/advanced/VOICEVOX-support.md
+      - userguide/Voicebank-development.md
+      - userguide/ENUNU-NNSVS-Support.md
+      - userguide/DiffSinger-support.md
+      - userguide/VOICEVOX-support.md
+      - userguide/Singer-Settings-and-Requirements.md
   - Developer Guide:
     - Compilation:
       - developerguide/Compiling-from-source.md
