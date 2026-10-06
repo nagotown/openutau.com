@@ -1,16 +1,12 @@
 ---
-layout: default
 title: "Expressions (Flags)"
-permalink: /Expressions-(Flags)/
-parent: "User Guide"
-nav_order: 5
 ---
-# About expressions
+## About expressions
 In OpenUtau, parameters such as volume, velocity, Voice Color (append subbanks), modulation, and UTAU flags are collectively referred to as “expressions.”  
 Additionally, there are expression types that allow drawing curves rather than applying them to individual notes.  
 The available expressions vary depending on the renderer.
 
-# Edit expressions
+## Edit expressions
 Use the arrow by the expressions to select which one you want to edit. 
 
 ![select expression](https://i.imgur.com/5gzG0ch.gif)
@@ -23,7 +19,7 @@ Click to set a value, and right click to reset it to the project default.
 
 ![edit expression](https://i.imgur.com/2PKCb2p.gif)
 
-# Default expressions
+## Default expressions
 
 | Name     | Abbreviation | Purpose                                           | Range      | Default | Note |
 | -------- | ------------ | ------------------------------------------------- | ---------- | ------- | ----- |
@@ -42,24 +38,24 @@ Click to set a value, and right click to reset it to the project default.
 | Alternate | ALT         | Alternate aliasing for duplicates in oto.ini      | 0 - 16     | 0       | |
 | Tone shift | SHFT       | Allows for selecting pitch alias                  | -36 - 36   | 0       | |
 
-#### VEL (velocity)
+### VEL (velocity)
 This corresponds to UTAU's Consonant Velocity. This affects the length of the fixed region of the OTO, which is the beginning of the note/phoneme.
 
 ![vel](https://i.imgur.com/ls2ECcq.gif)
-#### VOL (volume)
+### VOL (volume)
 This raises or lowers the overall volume of the note/phoneme.
 
 ![vol](https://i.imgur.com/11QKExP.gif)
-#### ATK (attack)
+### ATK (attack)
 This raises or lowers the volume of the beginning of the note/phoneme.
 
 ![atk](https://i.imgur.com/lw5wg26.gif)
-#### DEC (decay)
+### DEC (decay)
 This lowers the volume of the rest of the note/phoneme.
 
 ![dec](https://i.imgur.com/MNU1Bws.gif)
 
-#### ENG (Resampler Engine)
+### ENG (Resampler Engine)
 Selects the resampler engine used to render a phoneme. When set to "", it falls back to the choice set in the project's default settings, unless individual track preferences are used.  
 ![eng-setting](https://i.imgur.com/Fm2fZZ2.png)  
 You can have multiple resamplers loaded into your project properties as shown, selectable by a toggle menu.
@@ -74,26 +70,26 @@ The example above is written like this:
 If a resampler is in a subfolder, it needs to be called with the subfolder path:  
 `,subfolder\resampler.exe`
 
-#### MOD (modulation)
+### MOD (modulation)
 This determines how much the pitch is flattened from the original recording. By default this is 0, or completely flat.  
 This is an obsolete feature and is not recommended for use.
 
-#### MOD+ (modulation plus)
+### MOD+ (modulation plus)
 Reflect the original pitch of the voicebanks on the gray pitch line in the piano roll.  
 Unlike MOD, it can also be used with VCV/CVCV.
 
-#### Options Flags (Non-Numerical Flags)
+### Options Flags (Non-Numerical Flags)
 Add a flag. Change its type to "Options" and set "Option Values" to ",e".
 You will be able to use an expression to add nothing or "e" to resampler flags.
 
 ![flage-setting](https://i.imgur.com/7DEflzM.png)
 ![flage](https://i.imgur.com/Q6NUw93.gif)
 
-#### Other expressions
+### Other expressions
 All other expressions are like flags in UTAU.  
 For the expressions and flags not described here, you can check the [(English) UTAU Wiki's page](https://utau.fandom.com/wiki/Help:UTAU_User_Manual_-_7), or [(Japanese) UTAU Users' Mutual Aid Wiki's Page](https://w.atwiki.jp/utaou/pages/41.html).
 
-# Edit expressions lineup
+## Edit expressions lineup
 Expressions are saved per-project. To edit expression settings, go to **Tools > Expressions**.
 
 ![expressions](https://i.imgur.com/XxXvpLj.gif)

@@ -1,14 +1,11 @@
 ---
-layout: default
 title: "Keyboard Shortcuts"
-permalink: /Keyboard-Shortcuts/
-parent: "User Guide"
-nav_order: 3
 ---
 
-**NOTE:** <kbd>Ctrl</kbd> is mapped to the <kbd>⌘ Command</kbd> key on Macs
+> [!NOTE] 
+> <kbd>Ctrl</kbd> is mapped to the <kbd>⌘ Command</kbd> key on Macs.
 
-# Main Window
+## Main Window
 
 | Action | Keys |
 | - | - |
@@ -32,7 +29,7 @@ nav_order: 3
 | Solo Selected Track(s) | <kbd>Shift</kbd> + <kbd>S</kbd> |
 | Mute Selected Track(s) | <kbd>Shift</kbd> + <kbd>M</kbd> |
 
-# Piano Roll
+## Piano Roll
 
 ### Document Actions
 
@@ -155,7 +152,7 @@ nav_order: 3
 | View Expression Parameter #9 | <kbd>Alt</kbd> + <kbd>9</kbd> |
 | View Expression Parameter #10 | <kbd>Alt</kbd> + <kbd>0</kbd> |
 
-# Expression Control *(Inline control)*
+## Expression Control *(Inline control)*
 ### Numerical(Options) 
 
 | Action | Keys |
@@ -173,7 +170,7 @@ nav_order: 3
 | Draw Horizon Line | <kbd>Shift</kbd> + <kbd>Left click</kbd> |
 | Reset line | <kbd>Right click</kbd> |
 
-# Lyric Box *(inline popup)*
+## Lyric Box *(inline popup)*
 
 | Action | Keys |
 | - | - |
@@ -182,14 +179,14 @@ nav_order: 3
 | Go to Next Note | <kbd>Tab</kbd> |
 | Go to Previous Note | <kbd>Shift</kbd> + <kbd>Tab</kbd> |
 
-# Lyric Dialog
+## Lyric Dialog
 
 | Action | Keys |
 | - | - |
 | Apply | <kbd>Enter</kbd> |
 | Cancel | <kbd>Escape</kbd> |
 
-# Singers
+## Singers
 
 | Action | Keys |
 | - | - |

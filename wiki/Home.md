@@ -1,11 +1,6 @@
 ---
-layout: default
 title: "User Guide"
-permalink: /Home/
-nav_order: 2
 ---
-{% include lang-switcher.html %}
-**English** | [日本語](https://w.atwiki.jp/openutau_ja/pages/1.html)
 
 Welcome to the OpenUtau wiki!
 

@@ -1,14 +1,13 @@
 ---
-layout: default
 title: "Singer Settings and Requirements"
-permalink: /Singer-Settings-and-Requirements/
-parent: "User Guide"
-nav_order: 8
 ---
-# What Is a Singer?
+
+## What Is a Singer?
+
 Since OpenUtau supports not only UTAU voice banks but also machine learning models such as DiffSinger, we collectively refer to these voicebanks as "Singers."
 
-# Conditions for Using Singers in OpenUtau
+## Conditions for Using Singers in OpenUtau
+
 OpenUtau loads voice banks located in the "Singers" folder and in the "Additional Singer Path."
 The location of the "Singers" folder varies depending on your OS and installation method (whether you used the installer version or the portable version).
 You can specify the "Additional Singer Path" in the preferences.
@@ -19,11 +18,13 @@ For classic UTAU voice banks, basic formats such as wav and oto.ini conform to t
 The wav formats you can use depend on the resampler you want to use.
 While the original UTAU only loaded wav files located in the voice bank’s subfolders, OpenUtau loads all wav files even in deep subfolders beyond the second level. Additionally, there is effectively no limit on the number of aliases.
 
-# Singer Window
+## Singer Window
+
 You can open the Singer Window from the `Tools > Singers` menu in the Main Window.
 In the Singer Window, you can primarily configure Singer settings, otoing, and Voice Color (equivalent to prefix.map).
 
-## Singer Settings
+### Singer Settings
+
 You can configure various Singer settings by clicking the gear button.
 
 Notes: The settings configured here are saved to `character.yaml`. This is a file specific to OpenUtau and does not affect the settings when loading the voice bank into the original UTAU.
@@ -37,30 +38,35 @@ Notes: The settings configured here are saved to `character.yaml`. This is a fil
 - Merge with another voicebank: You can load an append voicebank into the main voicebank and merge them.
 - Generate Singer Error Report: You can check for any issues with the oto or the WAV file format.
 
-## Oto settings
+### Oto settings
+
 There is a simple otoing editor.
 You can also call external oto editors (vLabeler and setParam).
 
 Right-clicking on each line allows you to open the wav folder or regenerate the frq file.
 
-## Voice Color
+### Voice Color
+
 Voice Color is a feature that integrates append bank management with prefix.map.
 
-### What is prefix.map?
+#### What is prefix.map?
+
 Essentially, prefix.map is a system for handling multi-pitch banks.
 By appending recorded pitches—such as "a_C4" or "a_F4"—to the suffix of an alias, and mapping the pitch range to the suffix, the system automatically switches between sub-banks based on the note’s pitch.
 For example, you can configure it to use "a_C4" in the lower register and "a_F4" in the higher register.
 
 While the prefix.map file allows you to enter both a prefix (like `C4/a`) and a suffix (like `a_C4`), the prefix is a specification from UTAU’s early days and is rarely used.
 
-### What is Voice Color?
+#### What is Voice Color?
+
 In UTAU voicebanks that include append banks like Power or Soft, the recorded pitches may differ for each append banks.
 This means you would need to prepare a separate `prefix.map` file for each append banks, but this is not part of the original UTAU specification.
 Therefore, as a feature unique to OpenUTAU, we have Voice Color—a system that allows you to register expression names and suffixes for each pitch range for each append bank.
 
 This means that even with voicebanks that have complex structures, you can seamlessly switch between the wav sources just by selecting a Voice Color.
 
-### Editing Voice Color
+#### Editing Voice Color
+
 Click the "Edit Subbanks" button in the Singer window to open the dialog where you can set suffixes for each vocal range.
 
 First, select a Color in the upper-right corner. `(main)` is the default Color.

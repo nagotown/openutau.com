@@ -1,19 +1,15 @@
 ---
-layout: default
 title: "Resamplers and Wavtools"
-permalink: /Resamplers-and-Wavtools/
-parent: "User Guide"
-nav_order: 7
 ---
-{% include lang-switcher.html %}
+
 In UTAU, resampler is the core engine that does the major works of synthesis: changing the pitch and duration of the audio sample, and applying flags to the audio. Audio rendered with different resamplers has different sound quality. Different resamplers also provide different set of flags. OpenUtau ships with a resampler, `worldline`. There are also many third-party resamplers.
 
 Wavtool is the program that concatenates the audio slices from resampler into the final audio. OpenUtau ships with two wavtools, `simple` and `convergence`. There are also many third-party wavtools.
 
-# Installing Resamplers
+## Installing Resamplers
 After you install resampler, please switch to "CLASSIC" renderer and set your desired resampler via the gear icon (⚙).
 
-##  Windows
+###  Windows
 
 Resampler must be an executable (`.exe`). Resamplers can be placed in subfolders inside the `Resamplers` folder.
 1. In the OpenUtau folder, locate the resampler folder named `Resamplers`.
@@ -24,7 +20,7 @@ In OpenUtau version 0.1.119 or higher, resamplers can be installed by dragging a
 <img src="https://github.com/openutau/OpenUtau/assets/18076904/1a13d37d-b472-451d-b24a-e984b095bd4a" height="250">
 
 
-## MacOS
+### MacOS
 
 As of writing this, [OpenUtau v0.1.565.0](https://github.com/openutau/OpenUtau/releases/tag/0.1.565) has released with a new feature that allows you to directly run the Wine path without creating wrappers for each individual resampler.
 
@@ -105,7 +101,7 @@ To set the Wine path, do, <code>Command + Shift + G</code>, and paste in your Wi
 
 Return to OpenUTAU, and select, “CLASSIC,” in the resampler field. To the right there will be a cog icon. From here, you will be able to select your downloaded resamplers and wavtools. 
 
-## Linux
+### Linux
 [Macres](https://github.com/titinko/macres/releases) provides a native Linux version. Put it into the resamplers folder of OpenUtau.
 
 To use Windows resamplers into Linux, follow this method:
@@ -115,10 +111,10 @@ To use Windows resamplers into Linux, follow this method:
 3. In OpenUtau, enable wine compatibility by setting wine path in `Tools > Preferences > Advanced > Wine Path...`. Clicking `Detect` should automatically pick wine from your `$PATH`, otherwise click `Select` to pick it yourself.
 4. You can now use Windows resamplers in OpenUtau.
 
-# Tested Resamplers and Directories
+## Tested Resamplers and Directories
 This is a list of all UTAU resamplers tested with OpenUtau.
 
-## Windows
+### Windows
 
 |  Resampler |  Author  |  Resample Manifest  |  Additional Notes |
 | ------------ | ------------ | ------------ | ------------ |
@@ -139,10 +135,10 @@ This is a list of all UTAU resamplers tested with OpenUtau.
 | [hachimisampler](https://github.com/openhachimi/hachimisampler) | OpenHachimi | | Based on straycat, using pc-nsf-hifigan instead of WORLD. Geared toward "jinriki" human-voice models; for standard UTAU voicebanks see hifisampler below. |
 | [hifisampler](https://github.com/openhachimi/hifisampler/releases/latest) | OpenHachimi | | Based on straycat, using pc-nsf-hifigan instead of WORLD for improved audio quality. Requires running a separate Python rendering server alongside OpenUtau. |
 | [kuresampler](https://github.com/oatsu-gh/kuresampler) | oatsu-gh | | Combines WORLD with a neural vocoder, aiming for natural crossfades and higher-quality output. |
-| [lessampler.exe](https://github.com/YuzukiTsuru/lessampler/releases/) | YuzukiTsuru | | [See additonal notes.](/Resamplers-and-Wavtools/#compatible-with-adjustments) |
+| [lessampler.exe](https://github.com/YuzukiTsuru/lessampler/releases/) | YuzukiTsuru | | [See additonal notes.](/Resamplers-and-Wavtools#compatible-with-adjustments) |
 | [macres.exe](https://github.com/titinko/macres/releases)   | titinko   |  |
 | [model4.exe](https://utau2008.xrea.jp/downloads/m4.zip) | Ameya | | |
-| [moresampler.exe](https://bowlroll.net/file/139123) |  Kanru Hua | [moresampler.yaml](https://github.com/Cadlaxa/Resampler-Manifests/blob/main/Resampler%20Manifests/moresampler.yaml) | [See adjustments for compatibility.](/Resamplers-and-Wavtools/#compatible-with-adjustments) |
+| [moresampler.exe](https://bowlroll.net/file/139123) |  Kanru Hua | [moresampler.yaml](https://github.com/Cadlaxa/Resampler-Manifests/blob/main/Resampler%20Manifests/moresampler.yaml) | [See adjustments for compatibility.](/Resamplers-and-Wavtools#compatible-with-adjustments) |
 | [moresampler2](https://github.com/Astel123457/moresampler2/releases/latest) | Astel123457 | | In development, Linux and MacOS versions available, see below |
 | [NeoWorld](https://github.com/LovelyA72/NeoWorld/releases/latest) | LovelyA72 | | Experimental cross-platform fork of Zany's w4u; superseded for most users by SpaceWorld below. |
 | [phavoco.exe](http://utau2008.xrea.jp/downloads/phavoco010.zip) | Ameya   |  |
@@ -151,7 +147,7 @@ This is a list of all UTAU resamplers tested with OpenUtau.
 | [resampler.exe](http://utau2008.xrea.jp/utau0418e-inst.zip)  | Ameya  |  | UTAU built-in resampler.  |
 | [RUCE](https://github.com/Rocaloid/RUCE) | Kanru Hua | | Rocaloid UTAU Compatible Engine. |
 | [SillySampler](https://github.com/MLo7Ghinsan/GOOFER) | MLo7Ghinsan | | Speech source-filter based resampler; the repo is published under the name "GOOFER". |
-| [SpaceWorld_win64.exe](https://github.com/LovelyA72/SpaceWorld/releases) | LovelyA72 | [SpaceWorld_win64.yaml](https://github.com/LovelyA72/SpaceWorld/blob/master/SpaceWorld_win64.yaml) | Versions before 1.1.0: [See adjustments for compatibility.](/Resamplers-and-Wavtools/#compatible-with-adjustments) |
+| [SpaceWorld_win64.exe](https://github.com/LovelyA72/SpaceWorld/releases) | LovelyA72 | [SpaceWorld_win64.yaml](https://github.com/LovelyA72/SpaceWorld/blob/master/SpaceWorld_win64.yaml) | Versions before 1.1.0: [See adjustments for compatibility.](/Resamplers-and-Wavtools#compatible-with-adjustments) |
 |[StrayCatRunner.exe](https://github.com/Astel123457/straycat-server) | Astel123457 |  [StrayCatRunner.yaml](https://github.com/Cadlaxa/Resampler-Manifests/blob/main/Resampler%20Manifests/StrayCatRunner.yaml)|
 |[straycat-rs.exe](https://github.com/UtaUtaUtau/straycat-rs/) | UtaUtaUtau | [straycat-rs.yaml](https://github.com/Cadlaxa/Resampler-Manifests/blob/main/Resampler%20Manifests/straycat-rs.yaml)  |
 |[StrayCat.py](https://github.com/UtaUtaUtau/straycat) | UtaUtaUtau | [StrayCat.yaml](https://github.com/Cadlaxa/Resampler-Manifests/blob/main/Resampler%20Manifests/straycat.yaml)  | Deprecated in place of straycat-rs (above)
@@ -164,11 +160,11 @@ This is a list of all UTAU resamplers tested with OpenUtau.
 | [vs4u.exe](http://ackiesound.ifdef.jp/download.html#vs4u) | AckieSound |  |
 | [w4u.exe](http://utau2008.xrea.jp/downloads/w4u001.zip) | Zany |  [w4u.yaml](https://github.com/oxygen-dioxide/openutau-manifests/blob/main/world4utau.yaml) |
 | [WARP.exe](http://custom-made.seesaa.net/article/312530509.html) | Custom.Maid |  
-| [wn4u.exe](https://utaforum.net/threads/world4utau-update.20035/) | Zany | | [See adjustments for compatibility.](/Resamplers-and-Wavtools/#compatible-with-adjustments) |
+| [wn4u.exe](https://utaforum.net/threads/world4utau-update.20035/) | Zany | | [See adjustments for compatibility.](/Resamplers-and-Wavtools#compatible-with-adjustments) |
 | [world4utau.exe](http://utau2008.xrea.jp/mp3/engine_hikaku.html) | Ameya | | The original WORLD-based resampler (distinct from Zany's w4u/wn4u above). Requires the FFTW DLLs. A [cross-platform Mac/Linux port](https://github.com/xrdavies/world4utau) exists — see those sections below. |
 | [young3.exe](https://bowlroll.net/file/203018) | Zany | |
 
-### Compatible with adjustments
+#### Compatible with adjustments
 
 - [moresampler.exe](https://bowlroll.net/file/139123)
   - Add `moresampler.exe` and the default `moreconfig.txt` to the `Resamplers` folder.
@@ -183,32 +179,32 @@ This is a list of all UTAU resamplers tested with OpenUtau.
     - In development, lack of flag support
     - Oversized Audio Model Attention
 
-## MacOS
+### MacOS
 
 |  Resampler |  Author  |  Resample Manifest  |  Additional Notes |
 | ------------ | ------------ | ------------ | ------------ |
 |  worldline  | StAkira  |   | Built into OpenUtau. Works on all platforms. |
 | [ESPER-Utau](https://github.com/CdrSonan/ESPER-Utau/releases/latest) | CdrSonan | | Rename the executable to remove the platform-specific suffix so OpenUtau recognizes its supported expressions. |
 | [moresampler2](https://github.com/Astel123457/moresampler2/releases/latest) | Astel123457 | | In development, MacOS Version available in the releases tab, support Intel (x64) and M-series (arm64) macs. |
-| [macres](https://github.com/titinko/macres/releases)   | titinko   | [macres.yaml](/%ED%95%9C%EA%B5%AD%EC%96%B4-%EC%8B%9C%EC%9E%91-%EA%B0%80%EC%9D%B4%EB%93%9C/)  |
+| [macres](https://github.com/titinko/macres/releases)   | titinko   | [macres.yaml](/한국어-시작-가이드)  |
 |[straycat-rs.exe](https://github.com/UtaUtaUtau/straycat-rs/) | UtaUtaUtau | [straycat-rs.yaml](https://github.com/Cadlaxa/Resampler-Manifests/blob/main/Resampler%20Manifests/straycat-rs.yaml)  |
 | [world4utau](https://github.com/xrdavies/world4utau) | Ameya (port by xrdavies) | | Cross-platform port of world4utau; requires building fftw. |
 
-## Linux
+### Linux
 
 |  Resampler |  Author  |  Resample Manifest  |  Additional Notes |
 | ------------ | ------------ | ------------ | ------------ |
 |  worldline  | StAkira  |   | Built into OpenUtau. Works on all platforms. |
 | [ESPER-Utau](https://github.com/CdrSonan/ESPER-Utau/releases/latest) | CdrSonan | | Rename the executable to remove the platform-specific suffix so OpenUtau recognizes its supported expressions. |
-| [macres](https://github.com/titinko/macres/releases)   | titinko   | [macres.yaml](/%ED%95%9C%EA%B5%AD%EC%96%B4-%EC%8B%9C%EC%9E%91-%EA%B0%80%EC%9D%B4%EB%93%9C/)  |
+| [macres](https://github.com/titinko/macres/releases)   | titinko   | [macres.yaml](/한국어-시작-가이드)  |
 | [moresampler2](https://github.com/Astel123457/moresampler2/releases/latest) | Astel123457 | | In development, compiled with CMake for x64 and arm64 debian |
 |[straycat-rs.exe](https://github.com/UtaUtaUtau/straycat-rs/) | UtaUtaUtau | [straycat-rs.yaml](https://github.com/Cadlaxa/Resampler-Manifests/blob/main/Resampler%20Manifests/straycat-rs.yaml)  |
 | [world4utau](https://github.com/xrdavies/world4utau) | Ameya (port by xrdavies) | | Cross-platform port of world4utau; requires building fftw. |
 
-## Using multiple resamplers:
-Move to [the flags section of this wiki](/Expressions-%28Flags%29/#eng-resampler-engine) for more information.
+### Using multiple resamplers:
+Move to [the flags section of this wiki](/Expressions-(Flags)#eng-resampler-engine) for more information.
 
-# Resampler Manifest
+## Resampler Manifest
 A Resampler Manifest is a YAML file that manages expressions supported or unsupported by each resampler.  
 The Resampler Manifest primarily serves two purposes:
 - Enables batch addition of supported flags to a project using the `Add all expressions suggested by renderers` button in the `Expressions` editor.
@@ -216,7 +212,7 @@ The Resampler Manifest primarily serves two purposes:
 
 - Disable expressions not listed in this file to account for cases where each resampler has flags with different default values, maximum/minimum values, or effects.
 
-## Create Resampler Manifest
+### Create Resampler Manifest
 Resampler manifests should have the same name as the resampler executable, stored in the same folder. The manifest must have a `.yaml` file extension. For example, the resampler manifest for `moresampler.exe` should be `moresampler.yaml` located in the same folder with `moresampler.exe`.
 
 Below is a full example of a resampler manifest for Moresampler. To create a resampler manifest with OpenUtau, add the resampler's expressions to any `.ustx` project file. Open the project file in a text editor and copy the `expressions:` section into a blank manifest file.
@@ -372,9 +368,9 @@ expressions:
 ```
 To disable flags not listed, add a line `expression_filter: true` at the beginning or end of the file.
 
-# Installing Wavtools
+## Installing Wavtools
 
-## Windows
+### Windows
 1. On your unzipped OpenUtau folder, locate the wavtool folder named `Wavtools`.
 2. Open the wavtool folder and place the downloaded wavtool on the folder.
 
@@ -382,7 +378,7 @@ In OpenUtau version 0.1.119 or higher, wavtools can be installed by dragging and
 
 <img src="https://github.com/openutau/OpenUtau/assets/18076904/1a13d37d-b472-451d-b24a-e984b095bd4a" height="250">
 
-## macOS / Linux
+### macOS / Linux
 
 In OpenUtau 0.1.560 or higher, external Windows wavtools are now supported on macOS and Linux.
 
@@ -393,13 +389,13 @@ In OpenUtau 0.1.560 or higher, external Windows wavtools are now supported on ma
 
 Do note that only Windows wavtools are supported, no support for external native wavtools at the moment.
 
-# Tested Wavtools and Directories
+## Tested Wavtools and Directories
 Below is a list of all UTAU wavtools tested with OpenUtau.
 
 | Wavtool | Author | Additonal Notes |
 | --------- | -------- | ------------------ |
 | simple | StAkira | Built into OpenUtau. Works on all platforms. |
 | convergence | StAkira | Also built into OpenUtau. Uses phase compensation.|
-| [moresampler.exe](https://bowlroll.net/file/139123) | Kanru Hua | [See adjustments for compatibility.](/Resamplers-and-Wavtools/#compatible-with-adjustments) |
+| [moresampler.exe](https://bowlroll.net/file/139123) | Kanru Hua | [See adjustments for compatibility.](/Resamplers-and-Wavtools#compatible-with-adjustments) |
 | [wavtool64](http://utau2008.xrea.jp/2020/engine/wavtool64.zip) | Ameya | |
 | [wavtool4vcv](https://www.mediafire.com/file/1iwrak88c6xzb87/wavtool4vcv20141202.zip/file) | nmasao | |

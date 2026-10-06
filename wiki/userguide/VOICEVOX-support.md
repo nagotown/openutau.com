@@ -1,41 +1,44 @@
 ---
-layout: default
 title: "VOICEVOX Support"
-permalink: /VOICEVOX-support/
-parent: "Synthesis Engines"
-nav_order: 3
 ---
+
 OpenUtau supports VOICEVOX (humming function).  
 It is provided by the following [License](https://github.com/VOICEVOX/voicevox_engine/blob/master/LGPL_LICENSE)
 
 ## What is VOICEVOX?
+
 [VOICEVOX](https://voicevox.hiroshiba.jp/) is a free, medium-quality text-to-speech and singing voice synthesis software.  
 Click here for [Github](https://github.com/VOICEVOX/voicevox/tree/main)
 
-## VOICEVOX Software Terms of Use  
-### LICENSE AGREEMENT  
+## VOICEVOX Software Terms of Use
+
+### LICENSE AGREEMENT
+
 1. You may use the software for commercial and non-commercial purposes.  
 2. Use of the created audio is subject to the terms and conditions of the respective audio library.  
 3. When you grant a license to others to use the audio you have created, you must require them to comply with the provisions of 2 and 3 of this license agreement.  
 
-### Prohibitions  
+### Prohibitions
+
 * Redistribution of this software, in whole or in part, without permission  
 * Decompiling, reverse engineering, or disclosing these methods to the public.  
 * Causing disadvantage to the creator or any third party.  
 * Acts that offend public order and morals.  
 
-### Disclaimer  
+### Disclaimer
+
 The producer is not responsible for any damage or disadvantage caused by this software.  
 
 ### Other  
-Credit must be given to VOICEVOX when using this software.  
 
+Credit must be given to VOICEVOX when using this software.  
 
 Taken from the terms of use on the [VOICEVOX website.](https://voicevox.hiroshiba.jp/term/)  
 Please enjoy using VOICEVOX and abide by the Terms of Use!  
 Please refer to the README.txt file for each character for credit information!
 
 ## How to install
+
 <img width="45%" height="45%" alt="image" src="https://github.com/user-attachments/assets/377f368d-fda8-45ef-9678-88479da8adea" />  
 
 Enable Install to Additional Singer Path.  
@@ -47,6 +50,7 @@ Start OpenUtau while running VOICEVOX.
 An engine-only dependency package will be created in the future. (This is just a plan)
 
 ## Phonemizers
+
 The following are currently supported.  
 * S-VOICEVOX JA (Simple Voicevox Japanese Phonemizer)  
 * S-VOICEVOX EN to JA (Simple Voicevox ENtoJA Phonemizer)
@@ -57,17 +61,23 @@ To be supported in the future (This is just a plan)
 * VOICEVOX EN to JA
 
 ## Phonemes
-#### hiragana only
+
+### hiragana only
+
 * S-VOICEVOX JA
 * S-VOICEVOX EN to JA
-#### phoneme only
+
+### phoneme only
+
 * VOICEVOX JA
 
 ![image](https://github.com/openutau/OpenUtau/assets/93469977/230dbd33-e7c8-4494-95f6-418d644f3257)
 
 
 ## Expressions
+
 The following are currently supported.
+
 * DYN (Dynamics)
  Allows volume adjustment after speech synthesis
 * SHFT(tone shift) 音域調整
@@ -89,5 +99,6 @@ The following are currently supported.
  VOICEVOX JA timing correction function on/off switch (default auto)
 
 To be supported in the future
+
 * SHFC (tone shift curve)
 * BSNG (bass singer)

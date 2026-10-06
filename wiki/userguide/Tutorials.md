@@ -1,17 +1,14 @@
 ---
-layout: default
 title: "Tutorials"
-permalink: /Tutorials/
-parent: "User Guide"
-nav_order: 9
 ---
-{% include lang-switcher.html %}
+
 This page is open to edit by anyone in the community. Feel free to add your tutorials, guides, notes, or any tip tweets in "Quick Tips" below!
 
-# Basics
+## Basics
+
 ### Installation and basic usage
-See our [Install](/Install/) page for instructions to download and install OpenUtau.  
-See our [Getting Started](/Getting-Started/) page for basic usage and control guides.
+See our [Install](/Install) page for instructions to download and install OpenUtau.  
+See our [Getting Started](/Getting-Started) page for basic usage and control guides.
 
 ### Introduction
 
@@ -45,13 +42,13 @@ Custom expressions of various formats can be created.
 ### Classic singer support (conventional UTAU voice banks)
 - OpenUtau attempts to follow the same format as UTAU. `character.txt`, `oto.ini`, `prefix.map`, etc. are all recognized by OpenUtau when a voicebank is installed.
 - The "Singers" folder does not have to follow a rigid structure. Any folder inside the Singers folder containing a `character.txt` will be recognized by OpenUtau as a voicebank, whereas UTAU will only recognize voicebanks in the first layer of its "Singers" folder.  
-- Bank settings such as voice colors, default phonemizer, and other unique settings are saved inside the voicebank in the [`character.yaml`](/tech-note-%E2%80%90-character.yaml/) file. Voicebanks used in OpenUtau can be shared with other OpenUtau users without requiring a complicated setup.
+- Bank settings such as voice colors, default phonemizer, and other unique settings are saved inside the voicebank in the [`character.yaml`](/tech-note-‐-character.yaml) file. Voicebanks used in OpenUtau can be shared with other OpenUtau users without requiring a complicated setup.
 
 ## Voicebank Creation and Development
 This is a vast topic to cover, and many resources and methods were established far before OpenUtau existed. Many great resources for developing UTAU voicebanks can be found across the internet! But to get started, as well as get a quick touch point for OpenUtau-specific information, visit the page below:
 - /Voicebank-development
 
-# Advanced features
+## Advanced features
 ### ENUNU & SimpleENUNU
 ENUNU is a new technology that allows users to render vocals with the open-source AI voice synthesis software, NNSVS.  
 SimpleENUNU is a different version of ENUNU intended for enthusiasts and developers, which is more up-to-date with the latest experimental versions of NNSVS.  
@@ -64,7 +61,7 @@ To use an ENUNU bank in OpenUtau, simply install the appropriate version of "ENU
 When an ENUNU bank is selected in OpenUtau, the ENUNU server will render the vocals and send them back to OpenUtau automatically.  
   
 For more information on ENUNU support in OpenUtau, or to download the ENUNU/SimpleENUNU servers, see these pages:
-- [Status of ENUNU NNSVS Support](/ENUNU-NNSVS-Support/)
+- [Status of ENUNU NNSVS Support](/ENUNU-NNSVS-Support)
 - [ENUNU Server for OpenUtau](https://github.com/rokujyushi/ENUNU/releases)
 - [SimpleENUNU Server for OpenUtau](https://github.com/rokujyushi/SimpleEnunu/releases)
 
@@ -75,7 +72,7 @@ For more information on ENUNU support in OpenUtau, or to download the ENUNU/Simp
 singer_type: Enunu
 ```
 
-# Quick Tips
+## Quick Tips
 Got any tips for editing with OpenUtau? Feel free to share them here, or link them from social media!
 
 ### [VCCV English tutorial](https://docs.google.com/document/d/e/2PACX-1vRZ6ttcFIn56hgyYjxNwrP40KMfZbgoTlipaYKTyv6q2Sa9H4m3kc9uaQYUXe40uPTdXyDwtJQz-ATl/pub) by Anjo

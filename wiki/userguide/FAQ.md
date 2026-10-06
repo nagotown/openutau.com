@@ -1,60 +1,60 @@
 ---
-layout: default
 title: "FAQ"
-permalink: /FAQ/
-parent: "User Guide"
-nav_order: 4
 ---
-{% include lang-switcher.html %}
-You can search within this webpage with hotkey <kbd>Ctrl</kbd> + <kbd>F</kbd> on Windows or <kbd>⌘</kbd> + <kbd>F</kbd> on Mac.
-# Troubleshooting
-## Install and Launch
 
-### On macOS, when I try to run OpenUtau, it says "This app is damaged".
+You can search within this webpage with hotkey <kbd>Ctrl</kbd> + <kbd>F</kbd> on Windows or <kbd>⌘</kbd> + <kbd>F</kbd> on Mac.
+
+## Troubleshooting
+
+### Install and Launch
+
+#### On macOS, when I try to run OpenUtau, it says "This app is damaged".
 Apple requires developers to "sign" their apps in order to be trusted software. Having Apple sign an app costs money, and is not necessary for this project. As a result, Apple and macOS treats OpenUtau as "unsafe".  
 To run OpenUtau on macOS, the app must be "trusted" to run on your Mac.  
 Open a terminal and run `xattr -rc /Applications/OpenUtau.app`. Try opening OpenUtau again.
 
 Note: Similarly, if the dmg cannot be opened (""OpenUtau-osx-x64.dmg" Not Opened"), you can use the same command: `xattr -rc ~/Downloads/OpenUtau-osx-x64.dmg`.
 
-### Nothing happens when I try to launch OpenUtau
+#### Nothing happens when I try to launch OpenUtau
 You need the ".NET 8.0 Runtime" to launch OpenUtau (version 0.1.569 and later require the .NET 10 Runtime).  
 Please install the ".NET Desktop Runtime" from this page.  
 [Download .NET 8.0](https://dotnet.microsoft.com/download/dotnet/8.0)  
 [Download .NET 10.0](https://dotnet.microsoft.com/download/dotnet/10.0)  
 
-## Operation
-### OpenUtau crashes when I try to open the Preferences menu!
+### Operation
+
+#### OpenUtau crashes when I try to open the Preferences menu!
 In the folder where OpenUtau is installed, find the `prefs.json` file.  
 Deleting it will reset the settings, which may resolve the issue.  
 
-### Blank window when launching OpenUtau or opening piano roll
+#### Blank window when launching OpenUtau or opening piano roll
 This is a bug occurring on Intel-based macOS systems. Resize the window and it will display normally.
 
-### On Windows, it says "Unable to load DLL 'worldline' or one of its dependencies" or "DLL was not found".
+#### On Windows, it says "Unable to load DLL 'worldline' or one of its dependencies" or "DLL was not found".
 Install the [latest Visual C++ Redistributable](https://learn.microsoft.com/en-US/cpp/windows/latest-supported-vc-redist?view=msvc-170).
 
-### (Stable only)I get the worldline.dll error "There is no application set to open the document [...]" when trying to switch to the worldline resampler mid-project.
+#### (Stable only)I get the worldline.dll error "There is no application set to open the document [...]" when trying to switch to the worldline resampler mid-project.
 In the version 0.1.565, the worldline resampler only works when either "convergence or "simple" are selected as the wavtool. This is also the case when switching resamplers mid-project. Change the wavtool to either of these options and the error should go away.
 
-### How do I select an external resampler? [Moresampler, macres, TIPS, etc.] is not in the renderer list.
+#### How do I select an external resampler? [Moresampler, macres, TIPS, etc.] is not in the renderer list.
 Resamplers are selected in the Engine menu of the track. WORLDLINE-R is a special renderer, and it cannot use external resamplers.  
 Select the "Classic" renderer for the track, then click on the gray gear icon to select the resampler and the wavtool for that track.
 
-### "Unsupported audio file format" when rendering with moresampler
+#### "Unsupported audio file format" when rendering with moresampler
 Turn on `resampler-compatibility` in your moreconfig.txt file in your Resamplers folder.
 
-### The pitch line is acting strange in my project!
+#### The pitch line is acting strange in my project!
 If the project was imported from a UST or MIDI file, the tempo of the imported file may be set incorrectly. Commonly, files will be erroneously set to high BPM values, such as 50000.  
 Set the project BPM to the correct value in the main editor window.
 
-## Load Voicebanks
-### My voicebank doesn't show up in OpenUtau, even though it's in the Singers folder!
+### Load Voicebanks
+
+#### My voicebank doesn't show up in OpenUtau, even though it's in the Singers folder!
 - Make sure the voicebank is in the correct folder.
 - For UTAU Singer and DiffSinger, make sure the files are unzipped, not in a ZIP file.
 - Make sure the voicebank folder includes a `character.txt` file. Inside the file, write `name=(voicebank's name)`.
 
-### Why is there no sound when I play a project?
+#### Why is there no sound when I play a project?
 1. Open the Preferences menu from Tools > Preferences. Press the "Test" button below the "Playback Device" dropdown list.  
 If you hear a tone, your audio device is working correctly.  
 If you don't hear a tone, choose a different device in the "Playback Device" list and press "Test" again.
@@ -70,7 +70,7 @@ Try selecting a compatible singer or phonemizer.
 5. Make sure at least one track is not muted.  
 If the "M" button is highlighted on a track, it is muted. Press the "M" button to unmute the track.
 
-### My CV Japanese voicebank doesn't work!
+#### My CV Japanese voicebank doesn't work!
 1. Make sure that the `oto.ini` file has an alias for every sound file in the bank.
 2. Make sure all lyrics match an alias in the `oto.ini` file. If necessary, use the built-in Hiragana/Romaji converters to correct the lyrics.
 3. Make sure the phonemizer is set to "Default" or "JA VCV & CVVC".
@@ -78,7 +78,7 @@ If the "M" button is highlighted on a track, it is muted. Press the "M" button t
 OpenUtau will fall back to reading filenames if an alias is missing, but by default, it will only select the aliases in the `oto.ini`.  
 In the Singers settings, click the gear icon and enable “Use filename as alias.”
 
-### My Singer still doesn't play or sounds strange, but no troubleshooting steps so far have helped.
+#### My Singer still doesn't play or sounds strange, but no troubleshooting steps so far have helped.
 In cases like this, it's good to run a Singer Error Report check to rule out the voicebank configuration or formatting being the source of the problem. To do this:
 1. Select `Tools` on the main window navigation bar, and choose `Singers...` from the drop-down.
 2. Be sure the problematic Singer is selected, then navigate to the ⚙ icon and select "Generate Singer Error Report".
@@ -94,7 +94,7 @@ Common critical errors include, but are not limited to:
 
 > You can safely ignore warnings about duplicates, as well as warnings about incorrect `oto.ini` entries regarding "sample.wav" files and/or other extra samples intended for external use in DAWs or as demos.
 
-### I still can't solve my problem
+#### I still can't solve my problem
 You can send a feedback through [Discord](https://discord.gg/UfpMnqMmEM) or [GitHub Issue](https://github.com/openutau/OpenUtau/issues/new/choose). When sending feedbacks, please explain how to reproduce your bug, and provide your `.ustx` project, OpenUtau log file and full screenshots of your OpenUtau window.
 
 Use `Win+Shift+S` to take a screenshot on Windows. Use `Shift+Command+3` to take a screenshot on MacOS
@@ -102,7 +102,8 @@ Use `Win+Shift+S` to take a screenshot on Windows. Use `Shift+Command+3` to take
 Use "Help > Open Logs Location" to find your OpenUtau log file.
 ![image](https://github.com/openutau/OpenUtau/assets/54425948/c4c19dc1-aed4-4fa3-a047-5d82fd3dbf20)
 
-# Design and history
+## Design and history
+
 ### How to remove a voicebank?
 To remove (or to delete, to uninstall) a voicebank:
 - In "Tools → Singers", select the voicebank you want to remove
@@ -139,7 +140,8 @@ OpenUtau includes a default resampler and two wavtools by default. The included 
 In addition, the WORLDLINE-R renderer acts as its own resampler and wavtool, and allows for use of exclusive, special features that do not work with classic resamplers.  
 OpenUtau intends to maintain compatibility with standard UTAU resamplers and wavtools. However, compatibility cannot be guaranteed.
 
-# Future plans
+## Future plans
+
 ### Is there a default voicebank/mascot? Can I provide one?
 OpenUtau does not offer a default voicebank or mascot, and we do not have any intention of creating a voicebank or mascot for our project.  
 Fans may feel free to make voicebanks or mascots inspired by OpenUtau, but we will not accept any offers for a default voicebank/mascot.
@@ -150,5 +152,5 @@ This will be supported in a future version.
 
 Some commercial singing voice synthesis softwares support switching language inside a track, because all their voicebanks are developed by their official development team under the same standard, so they can unify how their phoentic system work. However, in UTAU ecosystem, voicebanks in different types are developed differently, so we can't simply merge them into one logic.-->
 
-# NNSVS / ENUNU related FAQ
-See the [Status of ENUNU NNSVS Support](/ENUNU-NNSVS-Support/#faq) page for more info on using NNSVS/ENUNU in OpenUtau.
+## NNSVS / ENUNU related FAQ
+See the [Status of ENUNU NNSVS Support](ENUNU-NNSVS-Support.md#faq) page for more info on using NNSVS/ENUNU in OpenUtau.

@@ -1,10 +1,7 @@
 ---
-layout: default
 title: "ENUNU & NNSVS Support"
-permalink: /ENUNU-NNSVS-Support/
-parent: "Synthesis Engines"
-nav_order: 2
 ---
+
 - Note: ENUNU/NNSVS support is **experimental**. There will be quirks. Be **patient**. Be **ready to troubleshoot**.
 - Note: **This page will change regularly**.
 

@@ -1,16 +1,12 @@
 ---
-layout: default
 title: "Getting Started"
-permalink: /Getting-Started/
-parent: "User Guide"
-nav_order: 2
 ---
-{% include lang-switcher.html %}
+
 ## About OpenUtau
-Please see [Tutorials](/Tutorials/) for an overview of OpenUtau and how it differs from conventional UTAU.
+Please see [Tutorials](/Tutorials) for an overview of OpenUtau and how it differs from conventional UTAU.
 
 ## Install
-For installing the OpenUtau Editor, voicebanks, and resampler, please see the [Install](/Install/) page.
+For installing the OpenUtau Editor, voicebanks, and resampler, please see the [Install](/Install) page.
 
 ## Projects
 ### Creating projects
@@ -84,7 +80,7 @@ Select a singer from the menu in the track header.
 
 ![select singer](https://i.imgur.com/PIzAx6s.gif)
 
-You can optionally select a phonemizer, which will automatically convert note lyrics into a form the voicebank can play. For more details, please check [Phonemizers](/Phonemizers%EF%BC%88%E6%97%A5%E6%9C%AC%E8%AA%9E%EF%BC%89/).
+You can optionally select a phonemizer, which will automatically convert note lyrics into a form the voicebank can play. For more details, please check [Phonemizers](/Phonemizers（日本語）).
 
 ![phonemizer](https://i.imgur.com/wcMNzKy.gif)
 
@@ -198,7 +194,7 @@ Legacy Plugins provide limited support for UTAU plugins. To add a plugin, copy t
 ![legacy](https://i.imgur.com/70eNNC9.gif)
 
 ### Edit expressions
-Please see [Expressions (Flags)](/Expressions-%28Flags%29/).
+Please see [Expressions (Flags)](/Expressions-(Flags)).
 
 ### Edit pitchbends
 You can show/hide pitchbends using the pitchbend icon in the top left, or by pressing `I` on your keyboard. Hidden pitchbends will still be applied to the notes.
