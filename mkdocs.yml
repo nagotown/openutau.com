@@ -1,0 +1,122 @@
+site_name: OpenUtau Wiki
+site_url: https://nagotown.github.io/ou_wiki/
+repo_url: https://github.com/nagotown/ou_wiki/
+
+docs_dir: wiki
+
+# edit_uri: https://github.com/nagotown/ou_wiki/tree/main/docs/OpenUtau.wiki
+
+repo_name: openutau/openutau
+
+nav:
+  - index.md
+  - User Guide:
+    - Home.md
+    - For beginners:
+      - userguide/beginners/Tutorials.md
+      - userguide/beginners/Install.md
+      - userguide/beginners/Getting-Started.md
+      - userguide/beginners/FAQ.md
+      - userguide/beginners/Keyboard-Shortcuts.md
+    - Basics:
+      - userguide/basics/Phonemizers.md
+      - userguide/basics/Resamplers-and-Wavtools.md
+      - userguide/basics/Expressions-(Flags).md
+      - userguide/basics/Legacy-Plugins.md
+    - Advanced:
+      - userguide/advanced/Voicebank-development.md
+      - userguide/advanced/ENUNU-NNSVS-Support.md
+      - userguide/advanced/DiffSinger-support.md
+      - userguide/advanced/VOICEVOX-support.md
+  - Developer Guide:
+    - Compilation:
+      - developerguide/Compiling-from-source.md
+      - developerguide/Compiling-G2p-Models.md
+    - Development:
+      - developerguide/Developing-new-phonemizers.md
+      - developerguide/Adding-support-for-a-new-synthesis-engine.md
+      - developerguide/Fork-OpenUtau-and-develop-a-new-editor.md
+    - Other:
+      - developerguide/USTX-file-format.md
+      - developerguide/Contributing-to-OpenUtau's-localization.md
+      - developerguide/tech-note-‐-music-is-music,-phonetics-is-phonetics-(also-why-you-don't-need-legacy-plugins).md
+  - Reference:
+    - reference/Reference.md
+    - reference/Release-Notes.md
+    - reference/Known-Bugs.md
+
+theme:
+  name: material
+  favicon: assets/images/openutau.png
+  logo: assets/images/openutau.png
+  icon:
+    repo: fontawesome/brands/github
+  # custom_dir: overrides
+  palette:
+    - scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+    - scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/brightness-7 
+        name: Switch to dark mode
+  features:
+    - navigation.sections
+    - navigation.indexes
+    - navigation.tabs
+    - content.action.edit
+    - content.action.view
+
+extra_css:
+  - assets/stylesheets/extra.css
+
+plugins:
+  - search
+  - ezlinks
+  - gh-admonitions
+  # - redirects:
+  #     redirect_maps:
+  #       'index.md': 'OpenUtau.wiki/Home.md'
+
+extra:
+  alternate:
+    - name: 日本語
+      link: https://w.atwiki.jp/openutau_ja/pages/1.html
+      lang: ja
+
+markdown_extensions:
+  # Python Markdown
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+  # Python Markdown Extensions
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde

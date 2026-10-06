@@ -1,0 +1,14 @@
+:root  > * {
+  /* primary */
+  --md-primary-fg-color:               #2e90db;
+  --md-primary-fg-color--light:        #90CAF9;
+  --md-primary-fg-color--dark:         #1E88E5;
+  --md-primary-bg-color:               #ffffff; /* button text */
+  --md-primary-bg-color--light:        #ffffff; 
+  /* accent */
+  --md-accent-fg-color:                #FF679D; /* link text hover */
+  --md-accent-fg-color--transparent:   #e62d6e1a; /* selected page bg */
+  --md-accent-bg-color:                #ffffff; /* ? */
+  --md-accent-bg-color--light:         #FF679D; /* bg */
+  
+}

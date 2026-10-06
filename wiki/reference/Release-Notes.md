@@ -5,8 +5,8 @@ permalink: /Release-Notes/
 parent: "Reference"
 nav_order: 1
 ---
-> The latest stable version is [0.1.565](/%ED%95%9C%EA%B5%AD%EC%96%B4-%EC%8B%9C%EC%9E%91-%EA%B0%80%EC%9D%B4%EB%93%9C/#01565-09-14-2025).  
-> See also [Known Bugs](/Known-Bugs/).
+> The latest stable version is [0.1.565](/한국어-시작-가이드#01565-09-14-2025).  
+> See also [Known Bugs](/Known-Bugs).
 
 <!-- Use the following GitHub CLI command to get a list of pull requests:
 gh pr list --state merged --repo stakira/OpenUtau --limit 1000 --json number,title,author,url,mergedAt --jq ".[] | select(.mergedAt >= \"2025-07-22T00:00:00Z\") | \"- [#\(.number)](\(.url)) - \(.title) - ([@\(.author.login)](https://github.com/\(.author.login)))\""
@@ -1117,7 +1117,7 @@ Fix note: If you at any point updated to this version and ran it, and have been 
 
 # [0.1.57](https://github.com/openutau/OpenUtau/releases/tag/build/0.1.57)~[0.1.73](https://github.com/openutau/OpenUtau/releases/tag/build/0.1.73) (04-23-2023)
 
-**Past release notes:** This is the first! If you need to know about previous releases, please see the github commit history. Efforts will be made to make sure that features up until this point are documented on the wiki. See [Getting Started](/Getting-Started/).
+**Past release notes:** This is the first! If you need to know about previous releases, please see the github commit history. Efforts will be made to make sure that features up until this point are documented on the wiki. See [Getting Started](/Getting-Started).
 
 ## Features
 - [#661](https://github.com/openutau/OpenUtau/pull/661) - Pitch Baking ([@oxygen-dioxide](https://github.com/oxygen-dioxide))
