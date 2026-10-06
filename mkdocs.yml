@@ -1,8 +1,6 @@
-site_name: OpenUtau Wiki
+site_name: OpenUtau
 site_url: https://nagotown.github.io/
 repo_url: https://github.com/nagotown/openutau.com/
-
-docs_dir: wiki
 
 # edit_uri: https://github.com/nagotown/ou_wiki/tree/main/docs/OpenUtau.wiki
 
